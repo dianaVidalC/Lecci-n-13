@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ejercicio Guiado</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/estilo.css" media="all">
 </head>
 <body>
   <h1 align="center">Formulario de Datos</h1>
   <section align="center">
-
   <form action="">
     <div>
       <label for="nombre">Nombre</label><br/>
-      <input id="nombre" type="text" required/>
+      <input id="nombre" type="text" placeholder="Nombre" required/>
     </div>
     <br>
     <div>
       <label for="apellido">Apellido</label><br/>
-      <input id="apellido" type="text" required/>
+      <input id="apellido" type="text" placeholder="Apellido" required/>
     </div>
     <br>
     <div>
     <label for="numero">Número de Teléfono</label><br/>
-    <input type="text" name="numero" pattern=" /^([0-9]+){9}$/"  title="solo números"required/>
+    <input type="text" name="numero" pattern="[0-9]{9}" title="solo números" placeholder="Télefono"required/>
   </div>
   <br>
   <label for="auto">Escoge tu Auto</label>
@@ -36,12 +36,12 @@
   </select>
       <br>
     <label for="email">Email</label><br/>
-    <input id="email" type="email" required/>
+    <input id="email" type="email" placeholder="ejemplo@zk.com" required/>
   </div>
   <br>
   <div>
     <label for="pw">Crea tu Contraseña</label><br/>
-    <input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres"required/>
+    <input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" placeholder="**********"required/>
   </div>
     <br>
   <button type="submit">Enviar</button>
